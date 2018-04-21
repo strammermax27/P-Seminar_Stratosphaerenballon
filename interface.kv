@@ -1,0 +1,61 @@
+<My_Graph>:
+	xlabel: 'X' 
+	ylabel: 'Y' 
+	x_ticks_minor: 1
+    x_ticks_major: 60*10
+    #y_ticks_major: 1000     
+    y_grid_label: True 
+    x_grid_label: True 
+    padding: 5
+    x_grid: True 
+    y_grid: True 
+    xmin: 0
+    #xmax: 700
+    #ymin: 0 
+    #ymax: 1	
+
+
+
+<Control_panel>:
+	amplitude: amplitude
+	canvas:
+		Color:
+			rgb: 0.9, 0.6, 0, 0.0001 #229,132,4,225
+		Rectangle:
+			size:self.size
+			pos:self.pos
+	Slider:
+		id: amplitude
+		min: 0 
+		max: 100
+		value: 0
+
+
+<main_layout>
+	orientation: 'vertical'
+
+	canvas:
+		Color:
+			rgb: 0.2, 0.2, 0.2
+		Rectangle:	
+			size: self.size
+			pos: self.pos
+
+	graph: this_graph
+	#panel: this_panel
+
+	
+
+	My_Graph:
+		id: this_graph
+		#size_hint: None, None
+		#size: self.parent.width, self.parent.height/1.7
+		#pos: 0, root.height/2
+
+		#slider_ampl: self.parent.panel.amplitude
+		
+
+	
+	#Control_panel:
+	#	id: this_panel
+			
