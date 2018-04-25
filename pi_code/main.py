@@ -402,39 +402,6 @@ def main():
 			time.sleep((loopTime - dt))
 		#print "\nloop End \n"
 
-		#produce fake height
-		'''if runtime < 15:
-			pass
-			print "phase one:" 
-			print "	    dont change height at all, moment before start"
-			print "     expected result: blinking"
-			print "	    height: ", current_height
-			print "     runtime: ", runtime
-			print "\n"
-		elif runtime < 30:
-			current_height += 2000
-			print "phase two:" 
-			print "	    change height, flying"
-			print "     expected result: not blinking"
-			print "	    height: ", current_height
-			print "     runtime: ", runtime
-			print "\n"
-			
-		elif runtime <35:
-			current_height += 1
-			print "phase three:" 
-			print "	    dont change height at all, 3000 m reached, landed"
-			print "     expected result: not blinking, then blinking"
-			print "	    height: ", current_height
-			print "     runtime: ", runtime
-			print "\n" 
-		elif runtime < 100:
-			current_height += 5
-		else:
-			current_height += 1			
-		'''
-
-
 
 		#DONT komment this out
 		height_difference = abs(old_height - current_height)
